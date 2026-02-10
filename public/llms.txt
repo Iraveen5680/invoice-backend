@@ -1,0 +1,12 @@
+## Pages
+- [Create New Invoice](/createinvoice): No description available
+- [Customers - Invoice Management System](/customers): Manage your customer database and track customer interactions
+- [Dashboard](/dashboard): Manage your invoices, customers, products and payments efficiently
+- [Edit Invoice - Invoice Management System](/editinvoice): No description available
+- [Invoices](/invoices): Create, manage and track all your invoices in one place
+- [Login - Invoice App](/auth): Login to manage your invoices.
+- [Parties - Invoice Management](/parties): Manage all your business parties
+- [Payments - Invoice Management System](/payments): Track and manage all payment transactions
+- [Products & Services - Invoice Management System](/products): Manage your product and service inventory
+- [Reports - Invoice Management](/reports): View and export detailed reports
+- [Settings - Invoice Management System](/settings): Configure your account and business settings

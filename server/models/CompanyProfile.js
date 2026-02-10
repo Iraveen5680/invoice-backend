@@ -1,0 +1,40 @@
+import mongoose from 'mongoose';
+
+const companyProfileSchema = new mongoose.Schema({
+    user_id: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },
+    name: String,
+    address: String,
+    phone: String,
+    email: String,
+    website: String,
+    site_name: String,
+    gst_number: String,
+    pan_number: String,
+    logo_url: String,
+    favicon_url: String,
+    state: String,
+    pincode: String,
+    business_type: [String],
+    industry_type: String,
+    theme: { type: String, default: 'modern' },
+    theme_primary_color: { type: String, default: '#3b82f6' },
+    font_family: { type: String, default: 'Inter' },
+    currency_symbol: { type: String, default: '₹' },
+    invoice_terms: String,
+    payment_qr_code_url: String,
+    upi_id: String,
+    show_logo_in_invoice: { type: Boolean, default: true },
+    show_signature_in_invoice: { type: Boolean, default: true },
+    show_gst_in_invoice: { type: Boolean, default: true },
+    show_pan_in_invoice: { type: Boolean, default: true },
+    show_phone_in_invoice: { type: Boolean, default: true },
+    show_address_in_invoice: { type: Boolean, default: true },
+    show_terms_in_invoice: { type: Boolean, default: true },
+    show_admin_bank_in_invoice: { type: Boolean, default: true },
+    show_qr_in_invoice: { type: Boolean, default: true },
+    show_admin_upi_in_invoice: { type: Boolean, default: true },
+    createdAt: { type: Date, default: Date.now },
+});
+
+const CompanyProfile = mongoose.model('CompanyProfile', companyProfileSchema);
+export default CompanyProfile;
